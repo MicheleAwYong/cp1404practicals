@@ -22,7 +22,6 @@ def main():
     print("Farewell.")
 
 def get_valid_score():
-    """Get a valid score (0-100 inclusive) from the user."""
     score = float(input("Enter score: "))
     while score < 0 or score > 100:
         print("Invalid score. Must be between 0 and 100.")
