@@ -1,7 +1,12 @@
 import random
 
 def get_score():
-    return float(input("Enter score: "))
+    while True:
+        try:
+            score = float(input("Enter score: "))
+            return score
+        except ValueError:
+            print("Invalid input. Please enter a numerical score.")
 
 def determine_result(score):
     if score < 0 or score > 100:
@@ -22,10 +27,10 @@ def main():
     display_result(user_score, result_for_user)
 
     print("-" * 20)
-
     random_score = random.randint(0, 100)
     result_for_random = determine_result(random_score)
     display_result(random_score, result_for_random)
+
 
 main()
 "This is for the Github"
