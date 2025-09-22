@@ -14,3 +14,4 @@ def print_asterisks(password):
     """Print asterisks equal to the length of the password."""
     print('*' * len(password))
 main()
+"This is for the Github"

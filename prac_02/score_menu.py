@@ -40,3 +40,4 @@ def show_stars(score):
     print("*" * int(score))
 if __name__ == '__main__':
     main()
+"This is for the Github"

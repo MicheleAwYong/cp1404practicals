@@ -28,3 +28,4 @@ def main():
     display_result(random_score, result_for_random)
 
 main()
+"This is for the Github"
