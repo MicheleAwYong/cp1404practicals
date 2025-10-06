@@ -5,11 +5,10 @@ Data file -> lists program
 FILENAME = "subject_data.txt"
 
 def main():
-    data = load_data(FILENAME)
-    display_subject_details(data)
+    subject_lists = get_subject_lists(FILENAME)
+    display_subject_details(subject_lists)
 
-
-def load_data(filename=FILENAME):
+def get_subject_lists(filename=FILENAME):
     all_subject_data = []
 
     with open(filename, "r") as input_file:
@@ -25,9 +24,10 @@ def load_data(filename=FILENAME):
             all_subject_data.append(parts)
     return all_subject_data
 
-def display_subject_details(data):
+
+def display_subject_details(subject_lists):
     print("\n--- Subject Details ---")
-    for subject in data:
+    for subject in subject_lists:
         subject_code = subject[0]
         lecturer_name = subject[1]
         num_students = subject[2]
