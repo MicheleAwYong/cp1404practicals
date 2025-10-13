@@ -1,3 +1,5 @@
+import csv
+
 FILENAME = "wimbledon.csv"
 COUNTRY_INDEX = 1
 CHAMPION_INDEX = 2
