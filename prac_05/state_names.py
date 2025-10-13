@@ -10,10 +10,10 @@ STATE_CODES_TO_NAMES = {
 }
 print(STATE_CODES_TO_NAMES)
 
-state_code = input("Enter short state: ")
+state_code = input("Enter short state: ").upper()
 while state_code != "":
-    if state_code in CODE_TO_NAME:
-        print(state_code, "is", CODE_TO_NAME[state_code])
+    if state_code in STATE_CODES_TO_NAMES:
+        print(f"{state_code} is {STATE_CODES_TO_NAMES[state_code]}")
     else:
         print("Invalid short state")
-    state_code = input("Enter short state: ")
+    state_code = input("Enter short state: ").upper()
