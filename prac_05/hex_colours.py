@@ -12,6 +12,7 @@ COLOUR_TO_HEX = {
 }
 
 
+
 def main():
     colour_name = input("Enter colour name: ").upper()
 
