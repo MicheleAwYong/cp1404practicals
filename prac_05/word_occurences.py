@@ -22,5 +22,6 @@ def main():
         count = word_counts[word]
         print(f"{word:<{max_width}} : {count}")
 
+
 if __name__ == '__main__':
     main()
