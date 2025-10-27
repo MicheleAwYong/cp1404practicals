@@ -1,4 +1,4 @@
-class Car:
+class car:
 
     def __init__(self, name="", fuel=0):
         self.name = name
