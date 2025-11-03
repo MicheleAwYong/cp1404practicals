@@ -71,7 +71,6 @@ def load_projects(filename):
     projects = []
     try:
         with open(filename, 'r', encoding='utf-8') as in_file:
-            # Skip the header line
             in_file.readline()
             for line in in_file:
                 parts = line.strip().split('\t')
@@ -128,7 +127,6 @@ def get_valid_date(prompt):
     while not is_valid_date:
         date_string = input(prompt)
         try:
-            # Attempt to parse the date string
             date = datetime.strptime(date_string, DATE_FORMAT).date()
             is_valid_date = True
         except ValueError:
