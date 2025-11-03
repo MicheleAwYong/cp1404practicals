@@ -9,8 +9,8 @@ class Project:
 
     def __str__(self):
         date_string = self.start_date.strftime("%d/%m/%Y")
-        return (f"{self.name}, start: {date_string}, Priority: {self.priority}, "
-                f"Estimate: ${self.cost_estimate:,.2f}, Completion: {self.completion_percentage}%")
+        return (f"{self.name}, start: {date_string}, priority {self.priority}, "
+                f"estimate: ${self.cost_estimate:,.2f}, completion: {self.completion_percentage}%")
 
     def __lt__(self, other):
         return self.priority < other.priority

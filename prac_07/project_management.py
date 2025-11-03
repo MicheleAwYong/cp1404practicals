@@ -1,7 +1,6 @@
 from prac_07 import project
 from datetime import datetime
 
-# Constants
 DEFAULT_FILENAME = "projects.txt"
 DATE_FORMAT = "%d/%m/%Y"
 MENU = ("- (L)oad projects\n"
