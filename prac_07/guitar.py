@@ -1,4 +1,5 @@
 from prac_07 import guitar
+
 CURRENT_YEAR = 2024
 VINTAGE_AGE = 50
 
