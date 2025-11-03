@@ -1,11 +1,3 @@
-# project_management.py
-"""
-CP1404 - Project Management Program
-Estimate: 5 hours
-
-A program to load and save a list of Project objects, providing a menu for management tasks
-like display, filtering, adding, and updating projects.
-"""
 from prac_07 import project
 from datetime import datetime
 
