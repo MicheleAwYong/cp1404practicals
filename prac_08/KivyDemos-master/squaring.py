@@ -1,15 +1,15 @@
 """
-CP1404/CP5632 Practical
+CP1404 Practical
 Kivy GUI program to square a number
-Lindsay Ward, IT@JCU
-Started 13/10/2015
+Michele Aw Yong @ JCU
+Started 10/11/2025
 """
 
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.core.window import Window
 
-__author__ = 'Lindsay Ward'
+__author__ = 'Michele Aw Yong'
 
 
 class SquareNumberApp(App):
