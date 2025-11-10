@@ -9,10 +9,13 @@ class BoxLayoutDemo(App):
         return self.root
 
     def handle_greet(self):
-        if random.randint(1, 10) <= 5:
-            self.root.ids.my_label.text = "ouch!!"
+        name = self.root.ids.name_input.text
+        if name.strip():
+            greeting = f"Hello, {name}!"
         else:
-            self.root.ids.my_label.text = "stop that!!"
+            greeting = "Hello there! Please enter your name."
+            self.root.ids.my_label.text = greeting
+            print(f"Greet button pressed. Displaying: {greeting}")
 
     def handle_greet(self, instance):
         print('greet')
