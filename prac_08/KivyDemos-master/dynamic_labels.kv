@@ -1,0 +1,21 @@
+
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    Label:
+        text: 'List of Dynamic Names'
+        size_hint_y: 0.1
+        font_size: '24sp'
+        color: (0.8, 0.2, 0.2, 1)
+
+    ScrollView:
+        size_hint_y: 0.9
+
+        BoxLayout:
+            id: main
+            orientation: 'vertical'
+            size_hint_y: None
+            height: self.minimum_height
+            spacing: 5
