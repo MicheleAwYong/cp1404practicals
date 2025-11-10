@@ -9,15 +9,15 @@ class BoxLayoutDemo(App):
         return self.root
 
     def handle_greet(self):
-        name = self.root.ids.name_input.text
-        if name.strip():
-            greeting = f"Hello, {name}!"
-        else:
-            greeting = "Hello there! Please enter your name."
-            self.root.ids.my_label.text = greeting
-            print(f"Greet button pressed. Displaying: {greeting}")
+        name = self.root.ids.input_name.text
+        greeting = f"Hello {name}"
+        self.root.ids.output_label.text = greeting
+        print(f"Greet button pressed. Displaying: {greeting}")
 
-    def handle_greet(self, instance):
-        print('greet')
+    def handle_clear(self):
+        self.root.ids.input_name.text = ''
+        self.root.ids.output_label.text = "Output cleared."
+        print("Clear button pressed. Input and output cleared.")
 
-BoxLayoutDemo().run()
+if __name__ == '__main__':
+    BoxLayoutDemo().run()
